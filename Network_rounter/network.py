@@ -35,16 +35,12 @@ class DataPacket:
 class Stack:
     def __init__(self):
         self.container = []
-
     def push(self, item):
         self.container.append(item)
-
     def pop(self):
         return self.container.pop() if self.container else None
-
     def peek(self):
         return self.container[-1] if self.container else None
-
     def is_empty(self):
         return len(self.container) == 0
 
